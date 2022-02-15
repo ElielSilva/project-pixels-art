@@ -1,9 +1,27 @@
-main  {
-  
+/* .pixel {
+  display: inline-block;
+  border: solid black;
+  height: 100px;
+  width: 100px;
+  color: white;
 }
+.sectiontwo {
+  background-color: blue;
+  width: 600px;
+  height: 600px;
+}
+
+.class-inline {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+}
+
 #color-palette {
   width: 100%;
-  height: 4000px;
+  height: 200px;
+  background-color: blue;
 }
 
 .color{
@@ -24,4 +42,4 @@ main  {
 }
 .green{
   background-color: green;
-}
+} */
