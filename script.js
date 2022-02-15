@@ -78,7 +78,7 @@ function selectedPaleta ()  {
   for (let index = 0; index < listPaleta.length; index+=1) {
     listPaleta[index].addEventListener('click', function  (event)  {
       for (let index = 0; index < listPaleta.length; index+=1) {
-        listPaleta[index].style.className = "color"
+        listPaleta[index].className = "color";
       }
       event.target.className = 'color selected';
     })
@@ -86,3 +86,13 @@ function selectedPaleta ()  {
   }
 }
 selectedPaleta ();
+
+function ColorirPixel ()  {
+  let pixelBox = document.getElementsByClassName('pixel');
+  for (let index = 0; index < pixelBox.length; index+=1) {
+    pixelBox[index].addEventListener('click', function  (event)  {
+      event.target.style.backgroundColor =  document.getElementsByClassName('selected')[0].style.backgroundColor
+    })
+  }
+}
+ColorirPixel()
