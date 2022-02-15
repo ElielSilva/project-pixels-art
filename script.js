@@ -52,6 +52,7 @@ function addQuadroPixels () {
   for (let index = 0; index < 5; index+=1) {
     let divline = document.createElement('div');
     divline.style.display = 'block';
+    divline.style.width = "800px"
     sectiontwo.appendChild(divline);
     
     for (let index = 0; index < 5; index++) {
@@ -70,3 +71,18 @@ function addQuadroPixels () {
   }
 }
 addQuadroPixels()
+
+
+function selectedPaleta ()  {
+  let listPaleta = document.getElementsByClassName('color')
+  for (let index = 0; index < listPaleta.length; index+=1) {
+    listPaleta[index].addEventListener('click', function  (event)  {
+      for (let index = 0; index < listPaleta.length; index+=1) {
+        listPaleta[index].style.className = "color"
+      }
+      event.target.className = 'color selected';
+    })
+    
+  }
+}
+selectedPaleta ();
