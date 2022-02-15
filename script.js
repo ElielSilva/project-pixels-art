@@ -117,7 +117,6 @@ function createQuadroPixelsN () {
   input.id  = 'board-size';
   let button = document.createElement('button');
   button.id = 'generate-board';
-  let LengthPixel = input.value;
   let sectionthree  = document.createElement('section');
   body.appendChild(sectionthree);
   
@@ -127,7 +126,7 @@ function createQuadroPixelsN () {
   //   let divline = document.createElement('div');
   //   divline.style.display = 'block';
   //   divline.style.width = "800px"
-  //   sectiontwo.appendChild(divline);
+  //   sectiontwo.appendChild(divline);...
     
   //   for (let index = 0; index < 5; index++) {
   //     let divblock = document.createElement ('div');
