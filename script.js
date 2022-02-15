@@ -26,9 +26,13 @@ function addPAletas () {
   sectionOne.style.height = '200px';
   for (let index = 0 ; index < 4; index +=1) {
     let div = document.createElement('div');
-    div.className = "color";
+    if (cores[index] === "black"){
+      div.className = "color selected"
+    }else {
+      div.className = "color";
+    }
     div.style.backgroundColor = cores[index];
-    div.style.width = '40 px';
+    div.style.width = '40px';
     div.style.height = '40px';
     div.style.display = 'inline-block';
     div.style.border = 'solid black';
@@ -54,11 +58,11 @@ function addQuadroPixels () {
       let divblock = document.createElement ('div');
       divblock.className = 'pixel';
       divblock.style.display = "inline-block";
-      divblock.style.width = '100px';
-      divblock.style.height = '100px';
+      divblock.style.width = '40px';
+      divblock.style.height = '40px';
       divblock.style.backgroundColor = 'white';
       divblock.style.border  = 'solid black';
-      
+      divblock.style.borderWidth =  '1px'
       divline.appendChild(divblock);
     }
     // let tagBr = document.createElement('br');
