@@ -1,0 +1,27 @@
+main  {
+  
+}
+#color-palette {
+  width: 100%;
+  height: 4000px;
+}
+
+.color{
+  border: solid black;
+  border-width: 1px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.black {
+  background-color: black;
+}
+.yellow{
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
