@@ -112,3 +112,32 @@ function ColorirPixel ()  {
 }
 ColorirPixel()
 
+function createQuadroPixelsN () {
+  let input = document.createElement('input');
+  input.id  = 'board-size';
+  let button = document.createElement('button');
+  button.id = 'generate-board';
+  let LengthPixel = input.value;
+  let sectionthree  = document.createElement('section');
+  body.appendChild(sectionthree);
+  
+  
+  
+  // for (let index = 0; index < 5; index+=1) {
+  //   let divline = document.createElement('div');
+  //   divline.style.display = 'block';
+  //   divline.style.width = "800px"
+  //   sectiontwo.appendChild(divline);
+    
+  //   for (let index = 0; index < 5; index++) {
+  //     let divblock = document.createElement ('div');
+  //     divblock.className = 'pixel';
+  //     divblock.style.display = "inline-block";
+  //     divblock.style.width = '40px';
+  //     divblock.style.height = '40px';
+  //     divblock.style.backgroundColor = 'white';
+  //     divblock.style.border  = 'solid black';
+  //     divblock.style.borderWidth =  '1px'
+  //     divline.appendChild(divblock);
+  
+}
