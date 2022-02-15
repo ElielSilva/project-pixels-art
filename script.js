@@ -45,6 +45,21 @@ function addPAletas () {
 }
 addPAletas()
 
+function createButton ()  {
+  let button = document.createElement('button');
+  button.id = 'clear-board';
+  button.innerText = 'Limpar';
+  body.appendChild(button)
+  button.addEventListener('click',  function  ()  {
+    let pixelBox = document.getElementsByClassName('pixel');
+    for (let index = 0; index < pixelBox.length; index+=1) {
+      pixelBox[index].style.backgroundColor = 'white';
+      
+    }
+  })
+}
+createButton()
+
 function addQuadroPixels () {
   let sectiontwo = document.createElement('section');
   sectiontwo.id ='pixel-board';
@@ -96,3 +111,4 @@ function ColorirPixel ()  {
   }
 }
 ColorirPixel()
+
