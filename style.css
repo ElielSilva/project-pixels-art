@@ -1,11 +1,27 @@
-/* .pixel {
+#color-palette  {
+  height: 200px;
+  width: 400px;
+}
+.color  {
+  width: 40px;
+  height: 40px;
+  border:solid black;
+  border-width: 1px;
+  display: inline-block;
+}
+
+.pixel {
+  color: white;
   display: inline-block;
   border: solid black;
-  height: 100px;
-  width: 100px;
-  color: white;
+  height: 40px;
+  width: 40px;
+  
 }
-.sectiontwo {
+div {
+  margin-bottom: 0px;
+}
+/*.sectiontwo {
   background-color: blue;
   width: 600px;
   height: 600px;
