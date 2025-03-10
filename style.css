@@ -1,61 +1,109 @@
-#color-palette  {
-  height: 200px;
-  width: 400px;
+body {
+  background-image: url("image2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
 }
-.color  {
-  width: 40px;
-  height: 40px;
-  border:solid black;
-  border-width: 1px;
-  display: inline-block;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-pixel {
+  display: flex;
+  display: block;
+  width: 501px;
 }
 
 .pixel {
-  color: white;
+  /* color: white;
   display: inline-block;
-  border: solid black;
-  height: 40px;
-  width: 40px;
-  
-}
-div {
-  margin-bottom: 0px;
-}
-/*.sectiontwo {
-  background-color: blue;
-  width: 600px;
-  height: 600px;
+  border: solid black 1px;
+  height: 98px;
+  width: 98px; */
 }
 
-.class-inline {
-  display: inline-block;
-  width: 100px;
+#color-palette  {
+  background-color: rgb(140, 171, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
-  background-color: azure;
+  width: 500px;
+  border-radius: 26px;
+
 }
 
-#color-palette {
+#container-color-palette {
+  display: flex;
+  justify-content: center;
+  height: 70%;
   width: 100%;
-  height: 200px;
-  background-color: blue;
 }
 
-.color{
-  border: solid black;
-  border-width: 1px;
-  display: inline-block;
+#container-pixel-board {
+  display: flex;
+  justify-content: center;
+}
+
+#container-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+/* Estilo do input */
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
   width: 100px;
-  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
 }
-.black {
-  background-color: black;
+
+/* Estilo do botão "Limpar" */
+#clear-board {
+  background-color: #f44336;
 }
-.yellow{
-  background-color: yellow;
+
+#clear-board:hover {
+  background-color: #e53935;
 }
-.red {
-  background-color: red;
+
+/* Estilo do botão "VQV" */
+#generate-board {
+  background-color: #2196F3;
 }
-.green{
-  background-color: green;
-} */
+
+#generate-board:hover {
+  background-color: #1976D2;
+}
